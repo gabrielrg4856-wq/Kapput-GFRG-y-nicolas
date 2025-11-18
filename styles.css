@@ -48,3 +48,7 @@ background: linear-gradient(180deg,#3c136e 0%, rgba(0, 0, 0, 1) 17%, rgba(10, 1,
     position: relative; 
     margin: 5px;
     }
+.el-germen {
+    height: 220px;
+    width: 220px;
+    }
