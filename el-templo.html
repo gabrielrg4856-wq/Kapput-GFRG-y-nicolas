@@ -4,28 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El templo</title>
-    <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <style>
+        
+        #templovid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; 
+        }
+
+        
+        .contenido {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;     
+            min-height: 80vh;        
+            text-align: center;
+            font-family: 'Keania One', sans-serif;
+            padding: 20px;
+            z-index: 1;   
+            color: #FFDEDE;
+    -webkit-text-stroke: 0.1px black;
+    font-size: 20px;
+    font-family: "Keania One", sans-serif;
+    font-weight: 400;
+    line-height: 19.2px;
+    word-wrap: break-word;
+    position: relative; 
+    margin: 5px;          
+ }
+        .contenido p {
+            max-width: 700px;
+            margin: 10px 0;
+        }
+
+       
+        #button1 {
+            margin-top: 20px;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            font-family: 'Keania One', sans-serif;
+            display: inline-block;
+            background: linear-gradient(to bottom, #69001F, #000000);
+            color: #CF0F47;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
+
    <div style="border: solid red 0px; margin-left: 15px; display: flex; align-items: center;">
-     <img src="imagyvif/logo Kinder.webp" style= " height: 100px"/>
-    <h1 id="tith">El templo</h1>
-     </div>
-    <p id="blanco">Kaputt era un ritual sin credo, una comunión hecha de beats, cuerpos y sombras.</p>
-    <p id="blanco">Un lugar que no pertenecía a nadie, pero que todos sentíamos nuestro.</p>
+        <img src="imagyvif/logo Kinder.webp" style="height: 100px"/>
+        <h1 id="tith" style="
+            color: #EC485D;
+            position: relative;
+            top: 20px;
+            left: 40px;
+            font-size: 70px;
+            font-family: 'Keania One', sans-serif;
+        ">El templo</h1>
+    </div>
 
-    <p id="blanco">Simón, joven productor y arquitecto sonoro, encontró ahí su propósito.</p>
-    <p id="blanco">Lucía, artista visual, convertía las luces en sueños.</p>
-    <p id="blanco">Entre ambos, nacía algo más que arte: una fe en el sonido.</p>
-
-    <p id="blanco">Pero toda frecuencia tiene su corte.</p>
-
-    <p><a id="button1" href="el-silencio.html">CUANDO TODO SE APAGA</a></p>
-
-    <video autoplay muted loop playsinline>
-  <source src="imagyvif/vid el templo.mp4" type="video/mp4">
-</video>
     
+    <video autoplay muted loop playsinline id="templovid">
+        <source src="imagyvif/vid el templo.mp4" type="video/mp4">
+    </video>
+
+    
+    <div class="contenido">
+        <p>Kaputt era un ritual sin credo, una comunión hecha de beats, cuerpos y sombras.</p>
+        <p>Un lugar que no pertenecía a nadie, pero que todos sentíamos nuestro.</p>
+        <p>Simón, joven productor y arquitecto sonoro, encontró ahí su propósito.</p>
+        <p>Lucía, artista visual, convertía las luces en sueños.</p>
+        <p>Entre ambos, nacía algo más que arte: una fe en el sonido.</p>
+        <p>Pero toda frecuencia tiene su corte.</p>
+
+        <a id="button1" href="el-silencio.html">CUANDO TODO SE APAGA</a>
+    </div>
+
 </body>
 </html>
-
