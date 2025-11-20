@@ -32,10 +32,11 @@ background: linear-gradient(180deg,#3c136e 0%, rgba(0, 0, 0, 1) 17%, rgba(10, 1,
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  margin-bottom: 1px;
 }
 #indexsp {
   color: #FFDEDE;
+  font-size: 70px;
+  margin-bottom: 400px;
 }
 #blanco1 {
     color: #FFDEDE;
@@ -63,13 +64,47 @@ background: linear-gradient(180deg,#3c136e 0%, rgba(0, 0, 0, 1) 17%, rgba(10, 1,
     top: 180px;
     }
 
-#bg-video {
+#indexbg-video {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* recorta y llena manteniendo proporción */
-    z-index: -1; /* detrás del contenido */
+    object-fit: cover; 
+    z-index: -1; 
     pointer-events: none;
  }
+
+.kaputt-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.Index-texto{
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#buttonindex {
+    display: inline-block;
+    margin-top: 10px;
+       display: inline-block;
+  background: linear-gradient(to bottom, #69001F, #000000);
+  color: #CF0F47;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
