@@ -161,10 +161,17 @@ background: linear-gradient(180deg,#3c136e 0%, rgba(0, 0, 0, 1) 17%, rgba(10, 1,
   color: #fff;
 }
 
-.img-derecha {
-  float: right;
-  margin: 0 0 1rem 1rem; 
-  max-width: 40%;       
+.fila {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px;
+}
+.texto {
+  flex: 1; 
+}
+.imagen-derecha {
+  width: 300px; 
   height: auto;
+  object-fit: cover;
 }
   
