@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <div class="kaputt-home">
-
     <h1 id="indexsp">Kaputt el latido no se apaga</h1>
-
     <div class="Index-texto">
         <p id="blanco">
             Bogotá nunca duerme. Entre el humo de los buses y el destello del neón, alguien siempre busca 
@@ -22,18 +19,39 @@
             <br><br>
             Es hora de empezar tu historia, Simón.
         </p>
-
         <a id="buttonindex" href="lo-profundo-de-tu-conciencia.html">Siente el ritmo</a>
     </div>
-
 </div>
 
 <video id="indexbg-video" autoplay muted loop playsinline>
     <source src="imagyvif/video-intro-pagina.mp4" type="video/mp4">
 </video>
 
+<audio autoplay loop id="backgroundMusic">
+    <source src="imagyvif/audio-intro.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Botón de control de música (flotante) -->
+<button onclick="toggleMusic()" id="musicBtn" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: #ff0066; color: white; border: none; cursor: pointer; border-radius: 5px; z-index: 1000; font-size: 18px;">
+    🔊
+</button>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById('backgroundMusic');
+    var btn = document.getElementById('musicBtn');
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = '🔊';
+    } else {
+        music.pause();
+        btn.innerHTML = '🔇';
+    }
+}
+</script>
     
 </body>
 </html>
+
 
 
