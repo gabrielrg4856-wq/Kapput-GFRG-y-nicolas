@@ -160,4 +160,11 @@ background: linear-gradient(180deg,#3c136e 0%, rgba(0, 0, 0, 1) 17%, rgba(10, 1,
   top: 180px;
   color: #fff;
 }
+
+.img-derecha {
+  float: right;
+  margin: 0 0 1rem 1rem; 
+  max-width: 40%;       
+  height: auto;
+}
   
