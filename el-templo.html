@@ -91,7 +91,30 @@
         <p>Pero toda frecuencia tiene su corte.</p>
 
         <a id="button1" href="el-silencio.html">CUANDO TODO SE APAGA</a>
-    </div>
+    </div
+
+        <audio autoplay loop id="backgroundMusic">
+    <source src="imagyvif/Red Clouds.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: #ff0066; color: white; border: none; cursor: pointer; border-radius: 5px; z-index: 1000; font-size: 18px;">
+    🔊
+</button>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById('backgroundMusic');
+    var btn = document.getElementById('musicBtn');
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = '🔊';
+    } else {
+        music.pause();
+        btn.innerHTML = '🔇';
+    }
+}
+</script>
 
 </body>
+
 </html>
