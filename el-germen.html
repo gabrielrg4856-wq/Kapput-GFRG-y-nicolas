@@ -37,7 +37,33 @@
             <img src="imagyvif/img 3 el germen.jpg" class="el-germen">
             <img src="imagyvif/img 4 el germen.jpg" class="el-germen">
         </div>
+        
     </div>
+
+    <audio autoplay loop id="backgroundMusic">
+    <source src="imagyvif/Sleep Party People - I'm Not Human At All.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: linear-gradient(to bottom, #69001F, #000000);
+  color: #CF0F47;
+  border: none; cursor: pointer; border-radius: 5px; z-index: 1000; font-size: 18px;">
+    🔊
+</button>
+
+<script>
+function toggleMusic() {
+    var music = document.getElementById('backgroundMusic');
+    var btn = document.getElementById('musicBtn');
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = '🔊';
+    } else {
+        music.pause();
+        btn.innerHTML = '🔇';
+    }
+}
+</script>
 </body>
 </html>
+
 
